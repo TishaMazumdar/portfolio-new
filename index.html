@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        
+        <!-- Custom CSS and JavaScript -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Font Awesome for Icons -->
+        <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </head>
+    <body>
+        <!--Navigation-->
+        <nav>
+            <li>
+                <a href="#home">Home</a>
+                <a href="#about">About</a> 
+                <a href="#work">Work Experience</a>
+                <a href="#certificates">Certificates/Awards</a>
+                <a href="#contact">Contact</a>
+            </li>  
+        </nav>
+
+        <!-- Home - Name, Summary, Social Buttons, Download CV -->
+        <section class="home">
+            <div class="home-content">
+                <h1>Hi, my name is</h1>
+                <h1>Tisha Mazumdar</h1>
+                <h2>I am a <span class="typewriter"></span></h2>
+                <p>Strategic Thinker. Relentless Executor. Future Industry Leader.</p>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/tisha-mazumdar" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/TishaMazumdar/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/hey_itstisha/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Download CV Button -->
+                <a href="CV - Tisha Mazumdar.pdf" download class="cv-button">Download CV</a>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="home-image">
+                <img src="images/hero-img.png" alt="Tisha Mazumdar">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+            </div>
+        </section>
+
+        <!-- About - Education || Projects [Skills -> buttons -> projects] -->
+        <section class="about">
+            <div class="about-content">
+                <div class="about-header">
+                    <h1>About Me</h1>
+
+                    <!-- Buttons for Education & Projects -->
+                    <div class="about-buttons">
+                        <button class="edu-btn" id="education-btn">Education</button>
+                        <button class="skills-btn" id="skill-btn">Skills</button>
+                    </div>
+                </div>
+                <p id="about-text">
+                    I’m a tech-driven strategist with a background in AI, project execution, and leadership. 
+                    Currently a Junior Manager Intern, I specialize in turning complex ideas into structured, high-impact solutions. 
+                    My goal? To drive innovation, build scalable systems, and create wealth—not just for myself, but to fund the future 
+                    of education and knowledge-sharing.
+                </p> 
+                
+                <!-- Education Section - Horizontal Timeline -->
+                <div id="education-content" class="education-section">
+                    <h2>Education</h2>
+                    <div class="timeline">
+                        <!-- The Indian Heights School -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-institute" data-info="indian-heights">The Indian Heights School</div>
+                            <div class="timeline-details" id="indian-heights">
+                                <p><strong>PCM + CS</strong></p>
+                                <p>2019 - 2022</p>
+                                <p>
+                                    Completed Class XII under the CBSE curriculum with a focus on Physics, Chemistry, Mathematics, and 
+                                    Computer Science. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- GD Goenka University -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-institute" data-info="gd-goenka">GD Goenka University</div>
+                            <div class="timeline-details" id="gd-goenka">
+                                <p><strong>B.Tech CSE Core</strong></p>
+                                <p>2022 - Present</p>
+                                <p>
+                                    Focusing on AI, Deep Learning, OOPs, and Entrepreneurship & Development, 
+                                    while conducting personal research in Psychology and AI.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- CESI -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-institute" data-info="cesi">CESI, École d'Ingénieurs</div>
+                            <div class="timeline-details" id="cesi">
+                                <p><strong>Semester Exchange Program</strong></p>
+                                <p>2024</p>
+                                <p>
+                                    Specialised in AI and algorithms with a strong emphasis on project-based learning, 
+                                    completing 20+ industry-focused projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div id="skills-content" class="skills-section">
+                    <h2>Skills</h2>
+
+                    <!-- Skill Buttons -->
+                    <div class="skills-buttons">
+                        <button class="skill-btn" data-skill="python">Python</button>
+                        <button class="skill-btn" data-skill="ml">AI/ML</button>
+                        <button class="skill-btn" data-skill="react">ReactJS and Firebase</button>
+                        <button class="skill-btn" data-skill="javascript">HTML, CSS, and JavaScript</button>
+                    </div>
+
+                    <!-- Projects Display Area -->
+                    <div id="projects-container">
+                        <div class="project-card ml-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/CESI/tree/main/AI/Project/Final%20Deliverable" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Employee Attrition Prediction & Analysis</h3>
+                            </div>
+                            <img src="images/p1.png" alt="Project Image">
+
+                            <p>🚀 Predicted employee churn using machine learning, enabling data-driven retention strategies.</p>
+                            <p>⚡ Achieved 98-100% accuracy with Random Forest, delivering highly reliable attrition insights.</p>
+                            <p>📊 Identified key factors influencing turnover, helping businesses proactively retain top talent.</p>
+                        </div>
+
+                        <div class="project-card python-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/CESI/tree/main/AI/Project/Final%20Deliverable" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Employee Attrition Prediction & Analysis</h3>
+                            </div>
+                            <img src="images/p1.png" alt="Project Image">
+
+                            <p>🚀 Predicted employee churn using machine learning, enabling data-driven retention strategies.</p>
+                            <p>⚡ Achieved 98-100% accuracy with Random Forest, delivering highly reliable attrition insights.</p>
+                            <p>📊 Identified key factors influencing turnover, helping businesses proactively retain top talent.</p>
+                        </div>
+
+                        <div class="project-card ml-project">
+                            <div class="project-header">
+                                <a href="https://cortex-delta.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                                <h3>Cortex - AI Chatbot for Headstarter</h3>
+                            </div>
+                            <img src="images/p5.png" alt="Project Image">
+                            <p>🤖 Designed an AI-powered chatbot to provide instant, accurate responses using Retrieval-Augmented Generation (RAG).</p>
+                            <p>⚡ Integrated Claude AI & Voiceflow, enabling seamless conversations with contextual understanding.</p>
+                            <p>📊 Built for scalability, offering personalized assistance and improving user engagement & retention.</p>
+                        </div>
+
+                        <div class="project-card javascript-project">
+                            <div class="project-header">
+                                <a href="https://cortex-delta.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                                <h3>Cortex - AI Chatbot for Headstarter</h3>
+                            </div>
+                            <img src="images/p5.png" alt="Project Image">
+                            <p>🤖 Designed an AI-powered chatbot to provide instant, accurate responses using Retrieval-Augmented Generation (RAG).</p>
+                            <p>⚡ Integrated Claude AI & Voiceflow, enabling seamless conversations with contextual understanding.</p>
+                            <p>📊 Built for scalability, offering personalized assistance and improving user engagement & retention.</p>
+                        </div>
+
+                        <div class="project-card ml-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/idp" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Comparative Analysis of ML Models for Flood Prediction</h3>
+                            </div>
+                            <img src="images/p2.jpg" alt="Project Image">
+                            <p>🌊 Built a machine learning model to predict flood severity using 484,366 data points for real-time analysis.</p>
+                            <p>⚡ Applied classification algorithms to enhance prediction accuracy and aid disaster management.</p>
+                            <p>📊 Presented findings at an international conference, showcasing AI’s impact on environmental forecasting.</p>
+                        </div>
+
+                        <div class="project-card python-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/idp" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Comparative Analysis of ML Models for Flood Prediction</h3>
+                            </div>
+                            <img src="images/p2.jpg" alt="Project Image">
+                            <p>🌊 Built a machine learning model to predict flood severity using 484,366 data points for real-time analysis.</p>
+                            <p>⚡ Applied classification algorithms to enhance prediction accuracy and aid disaster management.</p>
+                            <p>📊 Presented findings at an international conference, showcasing AI’s impact on environmental forecasting.</p>
+                        </div>
+
+                        <div class="project-card ml-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/CESI/tree/main/Algorithms/Project/Algorithms%20and%20Combinatorial%20Optimization%20-%20Project" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Delivery Route Optimization</h3>
+                            </div>
+                            <img src="images/p3.png" alt="Project Image">
+                            <p>🚚 Designed an AI-powered route optimization model to minimize delivery time and cost.</p>
+                            <p>⚡ Implemented Genetic Algorithms (GA) & Ant Colony Optimization (ACO) for efficient pathfinding.</p>
+                            <p>📊 Improved logistics efficiency by dynamically adjusting to traffic conditions and constraints.</p>
+                        </div>
+
+                        <div class="project-card python-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/CESI/tree/main/Algorithms/Project/Algorithms%20and%20Combinatorial%20Optimization%20-%20Project" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Delivery Route Optimization</h3>
+                            </div>
+                            <img src="images/p3.png" alt="Project Image">
+                            <p>🚚 Designed an AI-powered route optimization model to minimize delivery time and cost.</p>
+                            <p>⚡ Implemented Genetic Algorithms (GA) & Ant Colony Optimization (ACO) for efficient pathfinding.</p>
+                            <p>📊 Improved logistics efficiency by dynamically adjusting to traffic conditions and constraints.</p>
+                        </div>
+
+                        <div class="project-card python-project">
+                            <div class="project-header">
+                                <a href="https://github.com/TishaMazumdar/game-of-life" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <h3>Game of Life – Cellular Automaton Simulation</h3>
+                            </div>
+                            <img src="images/p4.jpeg" alt="Project Image">
+                            <p>🎮 Developed a Pygame-based simulation of John Conway’s Game of Life, showcasing emergent behavior in cellular automata.</p>
+                            <p>⚡ Implemented interactive controls, allowing users to define patterns and observe real-time evolution.</p>
+                            <p>📊 Optimized simulation speed and rendering for smooth, visually engaging animations.</p>
+                        </div>
+
+                        <div class="project-card javascript-project">
+                            <div class="project-header">
+                                <a href="https://inventori-codewithtish.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                                <h3>Inventori (Inventory Management Web App)</h3>
+                            </div>
+                            <img src="images/p6.png" alt="Project Image">
+                            <p>📦 Built a full-stack web app to track and manage pantry inventory in real time.</p>
+                            <p>⚡ Implemented user-friendly features for adding, editing, and categorizing items dynamically.</p>
+                            <p>🌐 Used ReactJS & Firebase for a seamless, responsive, and scalable experience.</p>
+                        </div>
+
+                        <div class="project-card react-project">
+                            <div class="project-header">
+                                <a href="https://inventori-codewithtish.vercel.app/" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                                <h3>Inventori (Inventory Management Web App)</h3>
+                            </div>
+                            <img src="images/p6.png" alt="Project Image">
+                            <p>📦 Built a full-stack web app to track and manage pantry inventory in real time.</p>
+                            <p>⚡ Implemented user-friendly features for adding, editing, and categorizing items dynamically.</p>
+                            <p>🌐 Used ReactJS & Firebase for a seamless, responsive, and scalable experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience - Timeline -->
+        <section class="work">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Feb 2025 – Present</p>
+                    <div class="content">
+                        <h3>Pilomation</h3>
+                        <p><strong>Junior Management Intern</strong></p>
+                        <ul>
+                            <li>Coordinated cross-functional teams to streamline workflows.</li>
+                            <li>Tracked progress via Taiga and ensured timely execution.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Oct 2024 – Jan 2025</p>
+                    <div class="content">
+                        <h3>Nucleo Research, Inc.</h3>
+                        <p><strong>Chief of Staff</strong></p>
+                        <ul>
+                            <li>Enhanced operational efficiency by 20%.</li>
+                            <li>Directed strategic planning and decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Aug 2024 – Oct 2024</p>
+                    <div class="content">
+                        <h3>Nucleo Research, Inc.</h3>
+                        <p><strong>Project Manager</strong></p>
+                        <ul>
+                            <li>Managed 4+ teams, integrated projects into a single product.</li>
+                            <li>Reported directly to the CEO with structured updates.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Sep 2024</p>
+                    <div class="content">
+                        <h3>Phia</h3>
+                        <p><strong>Product Evaluator</strong></p>
+                        <ul>
+                            <li>Tested beta software and provided usability feedback.</li>
+                            <li>Enhanced product performance by 20%.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Jul 2024 – Sep 2024</p>
+                    <div class="content">
+                        <h3>Headstarter</h3>
+                        <p><strong>Software Engineering Fellow</strong></p>
+                        <ul>
+                            <li>Built 5+ SaaS products and participated in weekly hackathons.</li>
+                            <li>Collaborated with startups to solve real-time problems.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Jun 2024</p>
+                    <div class="content">
+                        <h3>Pixstory</h3>
+                        <p><strong>Research Associate Fellow</strong></p>
+                        <ul>
+                            <li>Researched and authored daily trend reports.</li>
+                            <li>Implemented SEO strategies to boost engagement by 20%.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <p class="date">Dec 2023 – Jan 2024</p>
+                    <div class="content">
+                        <h3>Internshala</h3>
+                        <p><strong>Student Partner</strong></p>
+                        <ul>
+                            <li>Facilitated student upskilling through webinars.</li>
+                            <li>Helped increase internship placements by 15%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certification and Awards - infinite loop (pauses when hover) -->
+        <section class="certificates">
+            <h2>Certification and Awards</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Mixed awards (a) and certificates (c) -->
+                    <img src="images/c1.jpg" alt="Certificate 1">
+                    <img src="images/a1.jpg" alt="Award 1">
+                    <img src="images/c2.jpg" alt="Certificate 2">
+                    <img src="images/c3.jpg" alt="Certificate 3">
+                    <img src="images/c4.jpg" alt="Certificate 4">
+                    <img src="images/a2.jpg" alt="Award 2">
+                    <img src="images/c5.jpg" alt="Certificate 5">
+                    <img src="images/c6.jpg" alt="Certificate 6">
+                    <img src="images/a3.jpg" alt="Award 3">
+                    <img src="images/c7.jpg" alt="Certificate 7">
+                    <img src="images/c8.jpg" alt="Certificate 8">
+                    <img src="images/c9.jpg" alt="Certificate 9">
+                    <img src="images/a4.jpg" alt="Award 4">
+                    <img src="images/c10.png" alt="Certificate 10">
+                    <img src="images/c11.jpg" alt="Certificate 11">
+                    <img src="images/c12.jpg" alt="Certificate 12">
+                    <img src="images/c13.jpg" alt="Certificate 13">
+                    <img src="images/a5.jpg" alt="Award 5">
+                    <img src="images/c14.jpg" alt="Certificate 14">
+                    <img src="images/c15.jpg" alt="Certificate 15">
+                    <img src="images/c16.jpg" alt="Certificate 16">
+                    <img src="images/c17.jpg" alt="Certificate 17">
+                    <img src="images/c18.jpg" alt="Certificate 18">
+                    <img src="images/c19.jpg" alt="Certificate 19">
+                    <img src="images/a6.jpg" alt="Award 6">
+                    <img src="images/c20.jpg" alt="Certificate 20">
+                    <img src="images/c21.jpg" alt="Certificate 21">
+                    <img src="images/a7.jpg" alt="Award 7">
+                    <img src="images/c22.jpg" alt="Certificate 22">
+                    <img src="images/c23.jpg" alt="Certificate 23">
+            
+                    <!-- Duplicate the set for infinite scrolling -->
+                    <img src="images/c1.jpg" alt="Certificate 1">
+                    <img src="images/a1.jpg" alt="Award 1">
+                    <img src="images/c2.jpg" alt="Certificate 2">
+                    <img src="images/c3.jpg" alt="Certificate 3">
+                    <img src="images/c4.jpg" alt="Certificate 4">
+                    <img src="images/a2.jpg" alt="Award 2">
+                    <img src="images/c5.jpg" alt="Certificate 5">
+                    <img src="images/c6.jpg" alt="Certificate 6">
+                    <img src="images/a3.jpg" alt="Award 3">
+                    <img src="images/c7.jpg" alt="Certificate 7">
+                    <img src="images/c8.jpg" alt="Certificate 8">
+                    <img src="images/c9.jpg" alt="Certificate 9">
+                    <img src="images/a4.jpg" alt="Award 4">
+                    <img src="images/c10.png" alt="Certificate 10">
+                    <img src="images/c11.jpg" alt="Certificate 11">
+                    <img src="images/c12.jpg" alt="Certificate 12">
+                    <img src="images/c13.jpg" alt="Certificate 13">
+                    <img src="images/a5.jpg" alt="Award 5">
+                    <img src="images/c14.jpg" alt="Certificate 14">
+                    <img src="images/c15.jpg" alt="Certificate 15">
+                    <img src="images/c16.jpg" alt="Certificate 16">
+                    <img src="images/c17.jpg" alt="Certificate 17">
+                    <img src="images/c18.jpg" alt="Certificate 18">
+                    <img src="images/c19.jpg" alt="Certificate 19">
+                    <img src="images/a6.jpg" alt="Award 6">
+                    <img src="images/c20.jpg" alt="Certificate 20">
+                    <img src="images/c21.jpg" alt="Certificate 21">
+                    <img src="images/a7.jpg" alt="Award 7">
+                    <img src="images/c22.jpg" alt="Certificate 22">
+                    <img src="images/c23.jpg" alt="Certificate 23">
+                </div>
+            </div>     
+        </section>
+
+        <!-- Footer - Contact Me details -->
+        <div class="contact-divider"></div>
+        <section id="contact">
+            <div class="contact-content">
+                <div class="contact-image">
+                    <img src="images/contact-img.png" alt="Your Image">
+                </div>
+                <div class="contact-text">
+                    <h2>Let's Connect!</h2>
+                    <p>Got an exciting project, collaboration, or just want to say hi? Let's talk! 🚀</p>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/tisha-mazumdar" target="_blank" class="social-icon linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/TishaMazumdar/" target="_blank" class="social-icon github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/hey_itstisha/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="email-container">
+                        <a href="mailto:tishamazumdar2004@gmail.com" class="social-icon email-icon">
+                            <i class="fas fa-envelope social-icon"></i>
+                            <span class="email-text">tishamazumdar2004@gmail.com</span>
+                        </a>
+                    </div>
+        
+                    <p class="closing-quote">✨ "Building the future, one idea at a time." ✨</p>
+                </div>
+            </div>
+        </section>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
